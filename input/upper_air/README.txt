@@ -1,1 +1,1 @@
-Place the raw NOAA IGRA upper-air file required by the preprocessing scripts in this directory.
+Upper-air meteorological data were obtained from NOAA's Integrated Global Radiosonde Archive (IGRA).
