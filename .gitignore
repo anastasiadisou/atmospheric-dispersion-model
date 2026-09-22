@@ -1,0 +1,23 @@
+Python
+
+pycache/ .py[cod] .pyo *.pyd
+
+Virtual environments
+
+.venv/ venv/ env/
+
+IDE / OS files
+
+.vscode/ .idea/ .DS_Store Thumbs.db
+
+Generated preprocessing outputs
+
+processed/* !processed/.gitkeep
+
+Generated model outputs
+
+results/ CONCENTRATIONS_.txt CONCENTRATIONS_.grd
+
+Temporary / backup files
+
+.tmp .bak *~
