@@ -14,13 +14,7 @@ START_DATE = "2024-02-01"
 END_DATE = "2024-02-01"
 SPINUP_DAYS = 1
 
-# Repository paths:
-# atmospheric-dispersion-model/
-# ├── input/land_use/
-# ├── input/emissions/
-# ├── processed/
-# ├── results/
-# └── model/dispersion_model.py
+
 BASE_DIR = Path(__file__).resolve().parents[1]
 PROCESSED_DIR = BASE_DIR / "processed"
 LANDUSE_DIR = BASE_DIR / "input" / "land_use"
