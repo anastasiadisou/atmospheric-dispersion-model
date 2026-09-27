@@ -3,6 +3,9 @@ import math
 import numpy as np
 from datetime import datetime
 from pathlib import Path
+import time
+
+start_time = time.perf_counter()
 
 # ============================================================
 # USER SETTINGS
@@ -458,7 +461,9 @@ def main():
         water_mask[mask_lu] = p["is_water"]
 
     print("z0 min/mean/max:", z0_grid.min(), z0_grid.mean(), z0_grid.max())
-    print("albedo min/mean/max:", albedo_grid.min(), albedo_grid.mean(), albedo_grid.max())
+    print(
+        "albedo min/mean/max:", albedo_grid.min(), albedo_grid.mean(), albedo_grid.max()
+    )
     print("Bowen min/mean/max:", bowen_grid.min(), bowen_grid.mean(), bowen_grid.max())
     print(
         "Soil heat flux parameter min/mean/max:",
@@ -765,3 +770,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+end_time = time.perf_counter()
+elapsed_time = end_time - start_time
+
+print(f"Micromet elapsed time: {elapsed_time:.1f} seconds")
